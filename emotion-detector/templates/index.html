@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="container">
+        <h1>Emotion Detector</h1>
+        <p>Enter a sentence and detect the dominant emotion.</p>
+
+        <textarea id="textToAnalyze" rows="5" placeholder="Type your text here"></textarea>
+        <button type="button" onclick="runEmotionAnalysis()">Run Emotion Analysis</button>
+
+        <section id="system_response" class="result"></section>
+    </main>
+
+    <script src="{{ url_for('static', filename='mywebscript.js') }}"></script>
+</body>
+</html>
